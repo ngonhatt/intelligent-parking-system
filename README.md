@@ -93,3 +93,11 @@ and a PC-based management interface.
 - Improve license plate recognition accuracy
 - Migrate from Arduino Nano to a more powerful MCU (e.g. ESP32 or STM32)
 - Add cloud-based monitoring
+
+## 🧠 Project Structure
+```text
+intelligent-parking-system/
+├── arduino/        # Arduino Nano firmware
+├── pc_app/         # Python PC application
+└── README.md
+
