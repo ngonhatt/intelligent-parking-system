@@ -1,20 +1,22 @@
 # 🚗 Intelligent Parking System
 
 ## 📌 Overview
-This project is an Intelligent Parking Management System that automates
-vehicle entry and exit using RFID and image processing.
-The system combines embedded firmware, hardware control, and a PC-based
-management interface.
+This project is an Intelligent Parking Management System implemented using
+Arduino Nano, designed to automate vehicle entry and exit using RFID and
+image processing.
+The system combines microcontroller-based control, hardware actuation,
+and a PC-based management interface.
 
 ---
 
 ## 🔧 System Components
+- Arduino Nano (Main controller)
 - RFID Reader
 - USB Camera
 - Servo Motor (Barrier control)
 - Embedded controller
 - PC-based monitoring software
-- Excel file for vehicle data storage
+- CSV / Excel files for vehicle data storage
 
 ---
 
@@ -31,20 +33,22 @@ management interface.
 
 ## 🧠 System Workflow
 1. RFID card is scanned
-2. System verifies vehicle registration
-3. Camera captures vehicle image
-4. Barrier opens if authorized
-5. Vehicle count is updated
-6. Barrier closes after vehicle passes
+2. Arduino Nano sends vehicle ID to the PC via serial communication
+3. PC application captures vehicle image from camera
+4. System verifies vehicle registration
+5. Barrier opens automatically if authorized
+6. Vehicle count is updated
+7. Barrier closes after vehicle passes
+
 
 ---
 
 ## 🛠️ Software & Tools
-- Embedded C / C++
-- Serial communication
-- Image processing
+- Arduino (C / C++)
+- Serial communication (Arduino ↔ PC)
+- Image processing on PC
 - PC-based control interface
-- Excel-based data management
+- CSV and Excel-based data management
 
 ---
 
@@ -75,15 +79,17 @@ management interface.
 ---
 
 ## 📚 What I Learned
-- RFID system integration
-- Embedded system and PC software interaction
-- Designing real-world automation logic
-- Handling serial communication
-- System-level control and safety mechanisms
+- Arduino Nano-based system design
+- RFID reader integration with microcontroller
+- Serial communication between Arduino and PC
+- Coordinating embedded firmware with PC software
+- Designing real-world parking automation logic
+- Implementing safety mechanisms in embedded systems
 
 ---
 
 ## 🚀 Future Improvements
-- Replace Excel with database storage
+- Replace CSV / Excel with database storage
 - Improve license plate recognition accuracy
+- Migrate from Arduino Nano to a more powerful MCU (e.g. ESP32 or STM32)
 - Add cloud-based monitoring
