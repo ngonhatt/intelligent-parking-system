@@ -49,7 +49,7 @@ management interface.
 ---
 
 ## 📷 Demo
-* PROTOTYPE
+* PARKING MANAGEMENT SYSTEM PROTOTYPE
   
 <img width="471" height="419" alt="image" src="https://github.com/user-attachments/assets/fa523d43-e00a-4a7c-92da-c7b3e2618169" />
 
